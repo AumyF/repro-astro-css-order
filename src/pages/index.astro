@@ -1,0 +1,16 @@
+---
+import Base from "../layouts/Base.astro";
+
+// comment out the `Astro.glob` to see the style working properly
+const posts = await Astro.glob("./posts/*.md");
+---
+
+<Base>
+  <h1>This Heading's Font Size Should Be 2em</h1>
+</Base>
+
+<style>
+  h1 {
+    font-size: 2em;
+  }
+</style>
